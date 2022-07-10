@@ -6,6 +6,7 @@ import axios from 'axios'
 import Filters from './Filters'
 import LoadMore from './LoadMore'
 import Carousel from './Carousel'
+import CalltoActionSection from './CalltoActionSection'
 
 
 function Products() {
@@ -82,6 +83,7 @@ function Products() {
 
         <LoadMore />
         {products.length === 0 && <Loading />}
+        <CalltoActionSection/>
         </>
     )
 }

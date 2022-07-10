@@ -76,7 +76,11 @@ input {
   padding: 10px 25px;
   margin-bottom: 20px;
   border: 1px solid #555;
-  text-transform: capitalize;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  background: #d55527;
+  color: aliceblue;
+  border-radius: 10px;
 }
 
 /* -------------------- Carousel --------------- */
@@ -88,4 +92,30 @@ input {
 .carousel img{
   display: inline-block;
   max-height: 500px;
+}
+
+/* -------------------- CalltoActionSection --------------- */
+.subscribe-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.226)),
+    url(https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbWUlMjBkZWNvcnxlbnwwfHwwfHw%3D&w=1000&q=80)
+      no-repeat scroll 50% / cover;
+  padding: 100px 0;
+  margin: 40px auto;
+}
+.subscribe-head h2 {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin: 0 0 13px;
+  text-transform: uppercase;
+}
+.subscribe-head p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 39px;
+}
+.subscribe-head {
+  text-align: center;
 }
