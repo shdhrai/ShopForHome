@@ -3,7 +3,7 @@ import { GlobalState } from "../../GlobalState";
 import Menu from "./icon/menu.svg";
 import Close from "./icon/close.svg";
 import Carticon from "./icon/cart.svg";
-import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import axios from "axios";
 import Headertop from "./Headertop";
 import Login from '../mainpages/auth/Login'
