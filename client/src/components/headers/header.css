@@ -26,6 +26,12 @@ header ul li {
 header ul li:hover {
   opacity: 1;
 }
+.icon{
+  width: fit-content;
+  height: fit-content;
+  max-width: 100px;
+  max-height: 66px;
+}
 .menu {
   display: none;
 }

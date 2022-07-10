@@ -75,7 +75,7 @@ function Header() {
         <div className="menu" onClick={() => setMenu(!menu)}>
           <img src={Menu} alt="" width="30" />
         </div>
-
+        <img className="icon" src={process.env.PUBLIC_URL + "/images/logo.png"} alt="" srcset="" />
         <div className="logo">
           <h3>
             <Link to="/">{isAdmin ? "Admin" : "ShopForHome"}</Link>
