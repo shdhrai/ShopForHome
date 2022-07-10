@@ -17,6 +17,7 @@ export const Mailer = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} className='contactusform login-page '>
+      <span>Mail Stocks</span>
         <div className="mb-3">
       <label className="form-label">Name</label>
       <input type="text" name="user_name" className="form-control" required/>

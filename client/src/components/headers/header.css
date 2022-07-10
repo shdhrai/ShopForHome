@@ -68,3 +68,9 @@ header ul li:hover {
   margin: 0;
   padding: 0;
 }
+.contactusform span{
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: #d55527;
+}

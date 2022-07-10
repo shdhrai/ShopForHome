@@ -45,6 +45,9 @@ function Header() {
         <li>
           <Link to="/category">Categories</Link>
         </li>
+        <li>
+          <Link to="/history">History</Link>
+        </li> 
       </>
     );
   };
@@ -52,9 +55,6 @@ function Header() {
   const loggedRouter = () => {
     return (
       <>
-        <li>
-          <Link to="/history">History</Link>
-        </li>
         <li>
           <Link to="/" onClick={logoutUser}>
             Logout
