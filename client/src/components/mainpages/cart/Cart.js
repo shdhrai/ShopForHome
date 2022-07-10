@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { GlobalState } from "../../../GlobalState";
 import axios from "axios";
 import PaymentButton from "./PaymentButton";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const state = useContext(GlobalState);
@@ -76,7 +77,19 @@ function Cart() {
 
   if (cart.length === 0)
     return (
-      <h2 style={{ textAlign: "center", fontSize: "5rem" }}>Cart Empty</h2>
+      //   <h2 style={{ textAlign: "center", fontSize: "5rem" }}>Cart Empty</h2>
+      <div className=" alert alert-warning text-center mt-3">
+        Your cart is empty
+        <Link
+          className="btn btn-warning mx-5 px-5 py-3"
+          to="/"
+          style={{
+            fontSize: "12px",
+          }}
+        >
+          SHOPPING NOW
+        </Link>
+      </div>
     );
 
   return (
