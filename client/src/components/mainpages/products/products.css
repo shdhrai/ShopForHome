@@ -1,0 +1,80 @@
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  margin: 20px 0;
+}
+.section {
+  width: 100%;
+  padding-bottom: 6%;
+  padding-top: 2%;
+}
+.shoptext {
+  padding-top: 10px;
+}
+.shoptext h3,
+.shoptext p a {
+  color: #252525;
+}
+.shoptext h3 {
+  margin-top: 13px;
+  font-weight: 700;
+  font-size: 19px;
+}
+.border-product {
+  padding: 15px;
+  border: 1px solid #9b6450;
+  border-radius: 5px;
+  box-shadow: 0 0 27px 0 #9b6450;
+}
+
+/* ----------- Product Item ----------------- */
+@import url("../utils/productItem/productItem.css");
+
+.delete-all {
+  text-align: right;
+  margin: 20px;
+}
+.delete-all input {
+  height: 25px;
+  width: 25px;
+  transform: translateY(5px);
+  margin: 0 15px;
+}
+.delete-all span {
+  text-transform: uppercase;
+  color: rgb(3, 165, 206);
+  letter-spacing: 1.3px;
+}
+.delete-all button {
+  border: 1px solid crimson;
+  padding: 10px 25px;
+  color: crimson;
+  text-transform: uppercase;
+}
+
+/* ------------ Filters Menu ----------------- */
+.navbar {
+  background-color: #ebc5b9;
+  box-shadow: 0 0 27px 0 #9b6450;
+}
+.navbar select,
+input {
+  border: 1px solid rgb(108, 31, 31);
+  border-radius: 10px;
+  padding: 0 5px;
+  background-color: rgb(230, 210, 203);
+}
+
+
+/* -------------------- Load More --------------- */
+.load_more {
+  text-align: center;
+}
+.load_more button {
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  text-transform: capitalize;
+}
