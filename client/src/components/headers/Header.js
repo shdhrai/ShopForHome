@@ -104,12 +104,17 @@ function Header() {
         {isAdmin ? (
           ""
         ) : (
+          <>
           <div className="cart-icon">
             <span>{cart.length}</span>
             <Link to="/cart">
               <img src={Carticon} alt="" width="30" />
             </Link>
           </div>
+          <span class="badge rounded-pill bg-dark">
+            Wish
+          </span>
+        </>
         )}
       </header>
           <Route path="/" exact component={Products} />
