@@ -16,6 +16,7 @@ import NotFound from '../mainpages/utils/not_found/NotFound'
 import CreateProduct from '../mainpages/createProduct/CreateProduct'
 import DetailProduct from '../mainpages/detailProduct/DetailProduct'
 import { Mailer } from "../mailer/Mailer";
+import Home from "../mainpages/products/Home";
 
 function Header() {
   const state = useContext(GlobalState);
@@ -83,7 +84,7 @@ function Header() {
 
         <ul style={styleMenu}>
           <li>
-            <Link to="/">{isAdmin ? "Products" : "Shop"}</Link>
+            <Link to="/products">{isAdmin ? "Products" : "Shop"}</Link>
           </li>
 
           {isAdmin && adminRouter()}
@@ -117,7 +118,8 @@ function Header() {
         </>
         )}
       </header>
-          <Route path="/" exact component={Products} />
+          <Route path="/" exact component={Home} />
+          <Route path="/products" exact component={Products} />
           <Route path="/login" exact component={isLogged ? NotFound : Login} />
           <Route
             path="/register"

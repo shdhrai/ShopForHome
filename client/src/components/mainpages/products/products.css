@@ -58,6 +58,8 @@
 .navbar {
   background-color: #ebc5b9;
   box-shadow: 0 0 27px 0 #9b6450;
+  margin:40px;
+  margin-bottom: 50px;
 }
 .navbar select,
 input {
@@ -66,7 +68,9 @@ input {
   padding: 0 5px;
   background-color: rgb(230, 210, 203);
 }
-
+.form-control{
+  width: 250px;
+}
 
 /* -------------------- Load More --------------- */
 .load_more {
