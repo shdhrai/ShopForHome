@@ -9,8 +9,8 @@ const initialState = {
     title: '',
     price: 0,
     countInStock:0,
-    description: 'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',
-    review: 'Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus tempora architecto consequuntur vel itaque expedita laboriosam veniam, officia aliquid quam suscipit quod atque culpa sint pariatur nisi obcaecati nostrum recusandae.',
+    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repellendus consequuntur error quam, voluptate tempora expedita illum placeat delectus esse mollitia laboriosam alias rem saepe consectetur excepturi! Natus, doloremque accusamus?',
     category: '',
     _id: ''
 }
@@ -141,7 +141,7 @@ function CreateProduct() {
                 <div className="row">
                     <label htmlFor="product_id">Product ID</label>
                     <input type="text" name="product_id" id="product_id" required
-                    value={product.product_id} onChange={handleChangeInput} disabled={onEdit} />
+                    value={product.product_id} onChange={handleChangeInput} disabled={onEdit}/>
                 </div>
 
                 <div className="row">

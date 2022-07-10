@@ -16,22 +16,22 @@ export const Mailer = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='contactusform login-page'>
+    <form ref={form} onSubmit={sendEmail} className='contactusform login-page '>
         <div className="mb-3">
       <label className="form-label">Name</label>
-      <input type="text" name="user_name" className="form-control" />
+      <input type="text" name="user_name" className="form-control" required/>
       </div>
       <div className="mb-3">
       <label className="form-label">Email</label>
-      <input type="email" name="user_email" className="form-control"/>
+      <input type="email" name="user_email" className="form-control" required/>
       </div>
       <div className="mb-3">
       <label className="form-label">Contact Number</label>
-      <input type="Number" name="user_contactnumber" className="form-control"/>
+      <input type="Number" name="user_contactnumber" className="form-control" required/>
       </div>
       <div className="mb-3">
-      <label className="form-label">Message</label>
-      <textarea name="message" rows={3}/>
+      <label className="form-label">Stocks Message</label>
+      <textarea name="message" rows={3} required/>
       </div>
       <button className='btn btn-warning mailer' type="submit" value="Send">Submit</button>
     </form>
