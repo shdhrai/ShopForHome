@@ -15,6 +15,7 @@ import Categories from '../mainpages/categories/Categories'
 import NotFound from '../mainpages/utils/not_found/NotFound'
 import CreateProduct from '../mainpages/createProduct/CreateProduct'
 import DetailProduct from '../mainpages/detailProduct/DetailProduct'
+import { Mailer } from "../mailer/Mailer";
 
 function Header() {
   const state = useContext(GlobalState);
@@ -34,6 +35,9 @@ function Header() {
   const adminRouter = () => {
     return (
       <>
+       <li>
+          <Link to="/mailer">Mail Stocks</Link>
+        </li>
         <li>
           <Link to="/create_product">Create Product</Link>
         </li>
@@ -133,6 +137,7 @@ function Header() {
           <Route path="/cart" exact component={Cart} />
           <Route path="/detail/:id" exact component={DetailProduct} />  
           <Route path="/edit_product/:id" exact component={isAdmin ? CreateProduct : NotFound} />
+          <Route path="/mailer" exact component={isAdmin ? Mailer : NotFound} />
           
     </>
   );

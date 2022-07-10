@@ -16,7 +16,7 @@ export const Mailer = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='contactusform'>
+    <form ref={form} onSubmit={sendEmail} className='contactusform login-page'>
         <div className="mb-3">
       <label className="form-label">Name</label>
       <input type="text" name="user_name" className="form-control" />
@@ -33,7 +33,7 @@ export const Mailer = () => {
       <label className="form-label">Message</label>
       <textarea name="message" rows={3}/>
       </div>
-      <button type="submit" className="btn submit" value="Send">Submit</button>
+      <button className='btn btn-success mailer' type="submit" value="Send">Submit</button>
     </form>
   );
 };
