@@ -5,6 +5,7 @@ import Loading from '../utils/loading/Loading'
 import axios from 'axios'
 import Filters from './Filters'
 import LoadMore from './LoadMore'
+import Carousel from './Carousel'
 
 
 function Products() {
@@ -60,7 +61,7 @@ function Products() {
     return (
         <>
         <Filters />
-        
+        <Carousel/>
         {
             isAdmin && 
             <div className="delete-all">

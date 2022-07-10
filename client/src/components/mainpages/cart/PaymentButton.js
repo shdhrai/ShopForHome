@@ -1,10 +1,11 @@
 import React from 'react';
  
-export default class PaypalButton extends React.Component {
+export default class PaymentButton extends React.Component {
     render() {
         return (
-            <div>
-            </div>
+            <>
+            <button type="button" class="btn btn-warning">CheckOut</button>
+            </>
         );
     }
 }
