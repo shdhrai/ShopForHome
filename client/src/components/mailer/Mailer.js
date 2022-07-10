@@ -33,7 +33,7 @@ export const Mailer = () => {
       <label className="form-label">Message</label>
       <textarea name="message" rows={3}/>
       </div>
-      <button className='btn btn-success mailer' type="submit" value="Send">Submit</button>
+      <button className='btn btn-warning mailer' type="submit" value="Send">Submit</button>
     </form>
   );
 };

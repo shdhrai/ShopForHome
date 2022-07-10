@@ -1,4 +1,5 @@
 import React from 'react';
+// import PaypalExpressBtn from 'react-paypal-express-checkout';
  
 export default class PaypalButton extends React.Component {
     render() {
@@ -47,7 +48,15 @@ export default class PaypalButton extends React.Component {
         }
 
         return (
-           <></>
+           /* <PaypalExpressBtn 
+            env={env} client={client} 
+            currency={currency} 
+            total={total} onError={onError} 
+            onSuccess={onSuccess} onCancel={onCancel}
+            style={style} />*/
+            <div>
+                
+            </div>
         );
     }
 }
